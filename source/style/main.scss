@@ -1,0 +1,5 @@
+@use 'variavel';
+
+body{
+  background-color: variavel.$corPrincipal;
+}
