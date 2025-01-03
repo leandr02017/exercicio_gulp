@@ -31,8 +31,6 @@ function compilaSass() {
     .pipe(gulp.dest("./build/style"));
 }
 
-
-
 exports.default = function () {
   gulp.watch(
     "./source/style/main.scss",
@@ -44,6 +42,7 @@ exports.default = function () {
     { ignoreInitial: false },
     gulp.series(compilaJavaScript)
   );
+  
   gulp.watch(
     "./source/images/*",
     { ignoreInitial: false },
